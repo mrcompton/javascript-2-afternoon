@@ -36,7 +36,7 @@ let favoriteThings = {
   band: 'Alan Jackson',
   food: 'Shephards Pie',
   person: 'My Wife',
-  book: 'The Fellowship of the Ring',
+  book: 'The Robe',
   movie: 'The Importance of Being Ernest',
   holiday: 'Thanksgiving'
 
@@ -143,7 +143,7 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 
 //Code Here
 
-
+let methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object. 
@@ -152,7 +152,8 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 
 //Code Here
 
-
+methodCollection.alertHello = function(){alert('hello')}
+methodCollection.logHello = function(){console.log('hello')}
 
 /*
   Now call your alertHello and logHello methods.
@@ -160,7 +161,8 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 
 //Code Here
 
-
+methodCollection.alertHello()
+methodCollection.logHello()
 
 ////////// PROBLEM 6 //////////
 
@@ -171,7 +173,14 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 
 //Code Here
 
-
+function makePerson(name,birthday,ssn){
+  let newObj = {
+    name:name,
+    birthday:birthday,
+    ssn:ssn
+  }
+  return newObj
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -182,4 +191,12 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 
 //Code Here
 
+function makeCard(cardNumber,expirationDate,securityCode){
+  let creditCard = {
+    cardNumber:cardNumber,
+    expirationDate:expirationDate,
+    securityCode:securityCode
+  }
+  return creditCard
 
+}
