@@ -16,6 +16,12 @@
 
 //Code here
 
+let me = {
+  name: 'Matt',
+  age: '32'
+}
+
+alert(me.name)
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +32,15 @@
 */
 
 //Code here
+let favoriteThings = {
+  band: 'Alan Jackson',
+  food: 'Shephards Pie',
+  person: 'My Wife',
+  book: 'The Fellowship of the Ring',
+  movie: 'The Importance of Being Ernest',
+  holiday: 'Thanksgiving'
 
+}
 
 
 /*
@@ -34,7 +48,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Jeep Wrangler'
+favoriteThings.brand = 'Carhart'
 
 
 /*
@@ -43,7 +58,8 @@
 
 //Code here
 
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 ////////// PROBLEM 3 //////////
 
@@ -52,11 +68,14 @@
   Now, create a variable called 'item' and set it equal to the string 'firstPocket'. 
   Using bracket notation, add a 'firstPocket' key (or property) to backPack, using 'item'.
   Set the value of that key to 'chapstick'.
-  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
+  Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backPack. 
 */
 
 //Code here
-
+let backPack = {}
+let item = 'firstPocket'
+backPack[item] = 'chapstick'
+backPack.color = 'gray'
 
 
 /*
@@ -65,6 +84,7 @@
 
 //Code here
 
+alert(backPack)
 
 
 /*
@@ -75,6 +95,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -98,7 +119,8 @@ var user2 = {
 
 //Code Here
 
-
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
